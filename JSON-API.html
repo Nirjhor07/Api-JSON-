@@ -17,8 +17,17 @@
       rel="stylesheet"
       type="text/css"
     />
+    <!-- font awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body class="space-y-5">
+    <!-- display data load -->
     <h2 class="text-3xl text-neutral font-bold">Here we will practice JSON</h2>
     <button onclick="loadData()" class="btn btn-primary">
       Click me!!/load data
@@ -26,21 +35,38 @@
     <button onclick="loadPostData()" class="btn btn-primary">
       Display Load Data
     </button>
+    <!-- todo -->
+    <section id="todo-section">
+      <button onclick="loadTodo()" class="btn btn-primary">Todo</button>
+      <div
+        class="mx-auto space-y-2.5 bg-blend-soft-light w-11/12 flex text-center gap-7"
+      >
+        <div id="todo-div" class="space-y-2.5"></div>
+      </div>
+    </section>
+
+    <!-- display list items fetched from the website  -->
     <ul id="ul-section-for-post-data" class="list-decimal p-7 ml-5"></ul>
-    <div id="parent-post-div"
-      class="mx-auto space-y-2.5 bg-blend-soft-light w-11/12 grid grid-cols-3 text-center gap-7 "
+
+    <!-- Display objects fetch from the json or fake json placeholder and then display -->
+    <div
+      id="parent-post-div"
+      class="mx-auto space-y-2.5 bg-blend-soft-light w-11/12 grid grid-cols-3 text-center gap-7"
     >
-      <div class="border gap-3 bg-amber-100/10 p-4 shadow rounded-2xl h-full">
+      <!-- <div class="border gap-3 bg-amber-100/10 p-4 shadow rounded-2xl h-full">
         <h1 class="text-2xl text-neutral font-extrabold">This is the title</h1>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur
           optio quibusdam necessitatibus omnis laborum ea quos eos dolorum vitae
           accusamus?
         </p>
-      </div>
+      </div> -->
     </div>
+
+    <!-- All scripts -->
+    <script src="json-Api.js"></script>
+    <script src="postData.js"></script>
+    <!-- <script src="post-with-display.js"></script> -->
+    <script src="todo.js"></script>
   </body>
-  <script src="json-Api.js"></script>
-  <script src="postData.js"></script>
-  <script src="post-with-display.js"></script>
 </html>

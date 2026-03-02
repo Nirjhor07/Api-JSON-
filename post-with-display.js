@@ -10,7 +10,7 @@ const displayDataDiv = (dataFromFetch) => {
 
   //1. get the parent div
   const divParent = document.getElementById("parent-post-div");
-  console.log(divParent);
+//   console.log(divParent);
 
   dataFromFetch.forEach((element) => {
     // console.log(element);
