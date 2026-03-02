@@ -41,17 +41,3 @@ function loadData() {
     .then((data) => console.log(data));
 }
 
-const loadPostData = () => {
-  const url = "https://jsonplaceholder.typicode.com/posts";
-  fetch(url)
-    .then((res) => res.json())
-    .then((data) => displayPostData(data));
-};
-
-const displayPostData = (displayPost) => {
-  //console.log(displayPost);
-  displayPost.forEach((element) => {
-    //this will display each object in that array displayPost-> comes from data
-    console.log(element);
-  });
-};
